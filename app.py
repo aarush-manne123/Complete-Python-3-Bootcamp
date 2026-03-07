@@ -79,18 +79,18 @@ def games():
                 <p>HOW TO USE:</p>
                 <p>To use this page click on the following:</p>
                 <ul>
-                    <li><a href="http://complete-python-3-bootcamp-54gj.onrender.com/BasketballStars"><img src="https://imgs.crazygames.com/games/basketball-stars-2019/cover-1583231506155.png?metadata=none&quality=100&width=1200&height=630&fit=crop"></a></li>
-                    <li><a href="http://complete-python-3-bootcamp-54gj.onrender.com/DriveMad"><img src="https://drivemadgame.cc/uploads/games/main/img_68c3e328e0294.jpg"></a></li>
-                    <li><a href="http://complete-python-3-bootcamp-54gj.onrender.com/RetroBowl"><img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000048336/e3c1297d2ec30fe72a657af60c416d10c68a784bc874cf28e19cdf9261956919"></a></li>
-                    <li><a href="http://complete-python-3-bootcamp-54gj.onrender.com/F.N.F_indie_cross"><img src="https://i.ytimg.com/vi/aicBBQJ0gHI/maxresdefault.jpg"></a></li>
-                    <li><a href="http://complete-python-3-bootcamp-54gj.onrender.com/Time_Shooter"><img src="https://imgs.crazygames.com/time-shooter-3-swat_16x9/20241113103402/time-shooter-3-swat_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop"></a></li>
-                    <li><a href="http://complete-python-3-bootcamp-54gj.onrender.com/Chicken_Wars"><img src="https://imgs.crazygames.com/chicken-cs_16x9/20241014081245/chicken-cs_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop"></a></li>
-                    <li><a href="http://complete-python-3-bootcamp-54gj.onrender.com/Monkey_Mart"><img src="https://play-lh.googleusercontent.com/rWReIdyvDaYJPeOxn7hbC0b-96ixGpQKM_EndiQa3SUME8TtI_rNUcI4qsw5teK9mqk"></a></li>
-                    <li><a href="http://complete-python-3-bootcamp-54gj.onrender.com/Stickman_Hook"><img src="https://stickhook.io/data/image/game/stick-hook-game1.png"></a></li>
-                    <li><a href="http://complete-python-3-bootcamp-54gj.onrender.com/Minecraft"><img src="https://eaglercraft.com/img/Official_Minecraft_Trailer.webp"></a></li>
-                    <li><a href="http://complete-python-3-bootcamp-54gj.onrender.com/War-of-Knight"><img src="https://citybrawl.com/data/image/war-the-knights-battle-arena-swords-3d.jpg"></a></li>
-                    <li><a href="http://complete-python-3-bootcamp-54gj.onrender.com/CSGO"><img src="https://internet.medialities.org/wp-content/uploads/2024/02/07a83-csgo-operation-10-details-1.jpg?w=1024&h=576"></a></li>
-                    <li><a href="http://complete-python-3-bootcamp-54gj.onrender.com/Robbery"><img src="https://tcf.admeen.org/game/18500/18435/400x246/bank-robbery.jpg"></a></li>
+                    <li><a href="https://complete-python-3-bootcamp-54gj.onrender.com/BasketballStars"><img src="https://imgs.crazygames.com/games/basketball-stars-2019/cover-1583231506155.png?metadata=none&quality=100&width=1200&height=630&fit=crop"></a></li>
+                    <li><a href="https://complete-python-3-bootcamp-54gj.onrender.com/DriveMad"><img src="https://drivemadgame.cc/uploads/games/main/img_68c3e328e0294.jpg"></a></li>
+                    <li><a href="https://complete-python-3-bootcamp-54gj.onrender.com/RetroBowl"><img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000048336/e3c1297d2ec30fe72a657af60c416d10c68a784bc874cf28e19cdf9261956919"></a></li>
+                    <li><a href="https://complete-python-3-bootcamp-54gj.onrender.com/F.N.F_indie_cross"><img src="https://i.ytimg.com/vi/aicBBQJ0gHI/maxresdefault.jpg"></a></li>
+                    <li><a href="https://complete-python-3-bootcamp-54gj.onrender.com/Time_Shooter"><img src="https://imgs.crazygames.com/time-shooter-3-swat_16x9/20241113103402/time-shooter-3-swat_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop"></a></li>
+                    <li><a href="https://complete-python-3-bootcamp-54gj.onrender.com/Chicken_Wars"><img src="https://imgs.crazygames.com/chicken-cs_16x9/20241014081245/chicken-cs_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop"></a></li>
+                    <li><a href="https://complete-python-3-bootcamp-54gj.onrender.com/Monkey_Mart"><img src="https://play-lh.googleusercontent.com/rWReIdyvDaYJPeOxn7hbC0b-96ixGpQKM_EndiQa3SUME8TtI_rNUcI4qsw5teK9mqk"></a></li>
+                    <li><a href="https://complete-python-3-bootcamp-54gj.onrender.com/Stickman_Hook"><img src="https://stickhook.io/data/image/game/stick-hook-game1.png"></a></li>
+                    <li><a href="https://complete-python-3-bootcamp-54gj.onrender.com/Minecraft"><img src="https://eaglercraft.com/img/Official_Minecraft_Trailer.webp"></a></li>
+                    <li><a href="https://complete-python-3-bootcamp-54gj.onrender.com/War-of-Knight"><img src="https://citybrawl.com/data/image/war-the-knights-battle-arena-swords-3d.jpg"></a></li>
+                    <li><a href="https://complete-python-3-bootcamp-54gj.onrender.com/CSGO"><img src="https://internet.medialities.org/wp-content/uploads/2024/02/07a83-csgo-operation-10-details-1.jpg?w=1024&h=576"></a></li>
+                    <li><a href="https://complete-python-3-bootcamp-54gj.onrender.com/Robbery"><img src="https://tcf.admeen.org/game/18500/18435/400x246/bank-robbery.jpg"></a></li>
                 </ul>
             </body>
             </html>"""
