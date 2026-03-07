@@ -6,7 +6,6 @@ import random as r
 port_num = r.randint(1000,10000)
 app = Flask(__name__)
 print(f"PORT_NUM=={port_num}")
-ip="192.168.68.104"
 
 @app.route("/")
 def cover():
@@ -74,8 +73,6 @@ def games():
     if request.method == "POST":
         user_input = request.form["user_text"]
         if user_input=="SCHOOLRULES":
-            webbrowser.open(f"http://{ip}:{port_num}/Info")
-            time.sleep(2)
             html = f"""
             <html>
             <body>
@@ -99,8 +96,7 @@ def games():
             </html>"""
             return html
         else:
-            time.sleep(2)
-            webbrowser.open(f"http://{ip}:{port_num}/Info")
+            pass
     return html1
 
 @app.route("/Info")
