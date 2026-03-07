@@ -6,7 +6,6 @@ import random as r
 port_num = r.randint(1000,10000)
 app = Flask(__name__)
 print(f"PORT_NUM=={port_num}")
-ip=input("IP: ")
 ip="192.168.68.104"
 
 @app.route("/")
