@@ -42,10 +42,11 @@ html1 = """
     
     <body>
     
-    <form method="POST">
-        <input type="password" name="user_text" placeholder="Password"><br>
-        <button type="submit">Submit</button>
-    </form>
+<form method="POST">
+    <input type="password" name="user_text" placeholder="Password"><br>
+    <input type="text" name="url" placeholder="URL for proxy (optional)"><br>
+    <button type="submit">Submit</button>
+</form>
     
     </body>
     </html>
@@ -111,18 +112,25 @@ def games():
             pass
     return html1
 
-@app.route("/Proxy",methods=["GET", "POST"])
+@app.route("/Proxy", methods=["GET", "POST"])
 def Proxy():
-	if request.method == "POST":
-        user_input = request.form["user_text"]
-        if user_input=="H#C3ER":
-			if request.method == "POST":
-        		user_input = request.form["user_text"]
-				r = requests.get("https://"+user_input1, verify=False)
-		    	return r.text
-		else:
-			pass
-	return html1
+
+    if request.method == "POST":
+
+        password = request.form["user_text"]
+
+        if password == "H#C3ER":
+
+            url = request.form["url"]
+
+            if not url.startswith("http"):
+                url = "https://" + url
+
+            r = requests.get(url, verify=False)
+
+            return r.text
+
+    return html1
 
 @app.route("/Info")
 def info():
