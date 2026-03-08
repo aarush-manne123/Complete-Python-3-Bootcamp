@@ -118,6 +118,24 @@ def info():
     <p>Brought to you by:H#C3R</p>
     """
     return html
+
+@app.route("/Why?")
+def why():
+	html="""
+	<head>
+		<t>Why?:</t>
+	</head>
+	<body>
+		<p>These pages were made originaly to up my skills</p>
+		<p>of coding python and HTML. But after a while I figured that</p>
+		<p>other people could use cites like these so I made my</p>
+		<p>project public.</p>
+		<p>Thank you for listining<p>
+		<p>Sincerly, H#C3ER
+	</body>
+	"""
+	return html
+
 @app.route("/BasketballStars")
 def BasketballStars():
     html = """<!DOCTYPE html>
