@@ -113,56 +113,65 @@ def games():
 
 @app.route("/Proxy", methods=["GET", "POST"])
 def Proxy():
-	html2 = """
-    <!DOCTYPE html>
-    <html>
-    <head>
-    <style>
-    body {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-		background-image: url("https://img.freepik.com/free-photo/illustration-cosmic-background-with-orange-neon-laser-lights_181624-19567.jpg?semt=ais_rp_50_assets&w=740&q=80");
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-        justify-content: center; /* horizontal center */
-        align-items: center;     /* vertical center */
-    }
-    
-    form {
-        text-align: center;
-    }
-    
-    input {
-        padding: 10px;
-        font-size: 16px;
-    }
-    
-    button {
-        padding: 10px;
-        margin-top: 10px;
-    }
-    </style>
-    </head>
-    
-    <body>
-    
+
+    html2 = """
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    background-image: url("https://img.freepik.com/free-photo/illustration-cosmic-background-with-orange-neon-laser-lights_181624-19567.jpg?semt=ais_rp_50_assets&w=740&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+
 <form method="POST">
-    <input type="password" name="user_text" placeholder="Password"><br>
-	<input type="text" name="url" placeholder="URL for proxy"><br>
-    <button type="submit">Submit</button>
+<input type="password" name="user_text" placeholder="Password"><br>
+<input type="text" name="url" placeholder="URL for proxy"><br>
+<button type="submit">Submit</button>
 </form>
-    
-    </body>
-    </html>
-        """
+
+</body>
+</html>
+"""
+
     if request.method == "POST":
+
         password = request.form["user_text"]
+
         if password == "H#C3ER":
+
             url = request.form["url"]
-            r = requests.get("https://"+url, verify=False)
-			
+
+            if not url.startswith("http"):
+                url = "https://" + url
+
+            r = requests.get(url, verify=False)
+
             return r.text
 
     return html2
