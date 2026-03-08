@@ -80,8 +80,8 @@ def games():
             html = f"""
             <html>
             <body style="background-image: url('https://img.freepik.com/free-photo/illustration-cosmic-background-with-orange-neon-laser-lights_181624-19567.jpg?semt=ais_rp_50_assets&w=740&q=80'); background-size: cover;">
-                <p>HOW TO USE:</p>
-                <p>To use this page click on the following:</p>
+                <p style="color: teal;">HOW TO USE:</p>
+                <p style="color: teal;">To use this page click on the following:</p>
                 <ul>
                     <li><a href="https://complete-python-3-bootcamp-1.onrender.com/BasketballStars"><img src="https://imgs.crazygames.com/games/basketball-stars-2019/cover-1583231506155.png?metadata=none&quality=100&width=1200&height=630&fit=crop"></a></li>
                     <li><a href="https://complete-python-3-bootcamp-1.onrender.com/DriveMad"><img src="https://drivemadgame.cc/uploads/games/main/img_68c3e328e0294.jpg"></a></li>
