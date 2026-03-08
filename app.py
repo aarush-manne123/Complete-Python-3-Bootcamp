@@ -96,6 +96,7 @@ def games():
                     <li><a href="https://complete-python-3-bootcamp-1.onrender.com/CSGO"><img src="https://internet.medialities.org/wp-content/uploads/2024/02/07a83-csgo-operation-10-details-1.jpg?w=1024&h=576"></a></li>
                     <li><a href="https://complete-python-3-bootcamp-1.onrender.com/Robbery"><img src="https://tcf.admeen.org/game/18500/18435/400x246/bank-robbery.jpg"></a></li>
 					<li><a href="https://complete-python-3-bootcamp-1.onrender.com/Friday_Night_Funking2"><img src="https://images.gamebanana.com/img/ss/mods/609480204201c.jpg"></a></li>
+					<li><a href="https://complete-python-3-bootcamp-1.onrender.com/NMTR"><img src="https://juicybeast.com/press/knightmare_tower/images/kt_screenshot_00.png"></a></li>
                 </ul>
             </body>
             </html>"""
@@ -2804,6 +2805,54 @@ lime.embed ("Funkin", "openfl-content", 1280, 720, { parameters: {} });
 
 """
 
+	return html
+
+@app.route("/NMTR")
+def NMTR():
+	html="""
+<Module>
+
+
+<!-- Ultimate Game Stash file--> 
+<!-- For the regularly updating doc go to https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/ -->
+
+
+
+<Module>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>really cool flash game</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+    }
+    #flash-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: black;
+      overflow: hidden;
+    }
+    .black-box {
+      position: fixed;
+      background: black;
+      z-index: 10;
+    }
+    #box-top {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+"""
 	return html
 
 
