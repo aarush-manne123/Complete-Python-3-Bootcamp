@@ -113,7 +113,7 @@ def games():
 def info():
     html="""
     <h1>Welcome_To_Info</h1>
-    <h3>This website is specifically designed to never be blocked and so </h3>
+    <h3>This website is specifically designed to be soly for fun and so </h3>
     <h3>All I want to say is LET THE PLAY BEGIN!!!</h3>
     <p>Brought to you by:H#C3R</p>
     """
