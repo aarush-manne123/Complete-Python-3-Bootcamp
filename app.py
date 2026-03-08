@@ -116,8 +116,10 @@ def Proxy():
 	if request.method == "POST":
         user_input = request.form["user_text"]
         if user_input=="H#C3ER":
-			r = requests.get("https://"+user_input, verify=False)
-		    return r.text
+			if request.method == "POST":
+        		user_input = request.form["user_text"]
+				r = requests.get("https://"+user_input1, verify=False)
+		    	return r.text
 		else:
 			pass
 	return html1
