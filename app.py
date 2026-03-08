@@ -40,6 +40,10 @@ def games():
         margin: 0;
         height: 100vh;
         display: flex;
+		background-image: url("https://img.freepik.com/free-photo/illustration-cosmic-background-with-orange-neon-laser-lights_181624-19567.jpg?semt=ais_rp_50_assets&w=740&q=80");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
         justify-content: center; /* horizontal center */
         align-items: center;     /* vertical center */
     }
