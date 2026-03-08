@@ -117,41 +117,11 @@ def Proxy():
     html2 = """
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    background-image: url("https://img.freepik.com/free-photo/illustration-cosmic-background-with-orange-neon-laser-lights_181624-19567.jpg?semt=ais_rp_50_assets&w=740&q=80");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-}
-
-form {
-    text-align: center;
-}
-
-input {
-    padding: 10px;
-    font-size: 16px;
-}
-
-button {
-    padding: 10px;
-    margin-top: 10px;
-}
-</style>
-</head>
-
-<body>
+<body style="background:black;color:white;text-align:center">
 
 <form method="POST">
-<input type="password" name="user_text" placeholder="Password"><br>
-<input type="text" name="url" placeholder="URL for proxy"><br>
+<input type="password" name="user_text" placeholder="Password"><br><br>
+<input type="text" name="url" placeholder="example.com"><br><br>
 <button type="submit">Submit</button>
 </form>
 
@@ -161,18 +131,22 @@ button {
 
     if request.method == "POST":
 
-        password = request.form["user_text"]
+        password = request.form.get("user_text")
+        url = request.form.get("url")
 
-        if password == "H#C3ER":
+        if password == "H#C3ER" and url:
 
-            url = request.form["url"]
+            try:
 
-            if not url.startswith("http"):
-                url = "https://" + url
+                if not url.startswith("http"):
+                    url = "https://" + url
 
-            r = requests.get(url, verify=False)
+                r = requests.get(url, verify=False, timeout=10)
 
-            return r.text
+                return r.text
+
+            except Exception as e:
+                return f"Proxy error: {e}"
 
     return html2
 
