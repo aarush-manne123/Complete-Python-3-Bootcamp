@@ -120,7 +120,7 @@ def info():
     """
     return html
 
-@app.route("/Why?")
+@app.route("/why")
 def why():
 	html="""
 	<head>
