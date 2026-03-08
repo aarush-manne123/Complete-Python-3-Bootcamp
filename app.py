@@ -3,8 +3,8 @@ import time
 
 from flask import *
 import random as r
-port_num = r.randint(1000,10000)
-app = Flask(__name__)
+port_num = r.randint(1001,10000)
+app=Flask(__name__)
 print(f"PORT_NUM=={port_num}")
 
 @app.route("/")
