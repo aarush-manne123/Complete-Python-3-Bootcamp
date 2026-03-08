@@ -79,6 +79,10 @@ def games():
         if user_input=="SCHOOLRULES":
             html = f"""
             <html>
+			<head>
+				<h1 style="color:light-blue">Welcome to</h1>
+				<t style="color:light-blue">LUNAR</t>
+			</head>
             <body style="background-image: url('https://img.freepik.com/free-photo/illustration-cosmic-background-with-orange-neon-laser-lights_181624-19567.jpg?semt=ais_rp_50_assets&w=740&q=80'); background-size: cover;">
                 <p style="color: teal;">HOW TO USE:</p>
                 <p style="color: teal;">To use this page click on the following:</p>
