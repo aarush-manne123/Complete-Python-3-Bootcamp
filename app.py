@@ -7,31 +7,7 @@ port_num = r.randint(1001,10000)
 app=Flask(__name__)
 print(f"PORT_NUM=={port_num}")
 
-@app.route("/")
-def cover():
-    html="""
-    <html>
-    <body>
-        <h1>Table Tennis: More Complex Than Tennis</h1>
-        <p style="max-width:800px;">Many people think tennis is the harder sport because it takes place on a big court and requires a lot of running. However, table tennis is, in reality, much more complex and nuanced. It moves faster, depends on tricky ball spins, and demands sharper thinking. Even though it occurs on a small table, it pushes players’ reactions and minds to their absolute limits.</p>
-
-        <p style="max-width:800px;">First, table tennis moves at a much faster pace than tennis. The International Table Tennis Federation (ITTF), the worldwide organization that governs the sport, explains that “a top-level rally can send the ball flying at more than 60 miles per hour across a nine-foot table” (ITTF, 2024). This statistic means that players have less than half a second to react to every shot. In contrast, tennis rallies happen on a much bigger court, so players generally have more time to prepare their movements and strategize their responses. Due to the smaller space and lightning-quick pace, table tennis effectively tests players' reaction time and precision in an unprecedented manner.</p>
-
-        <p style="max-width:800px;">Second, the way spin operates in table tennis makes it significantly more difficult and intricate. A study conducted by researchers at the University of Sheffield, a well-known college in England, found that “even the smallest change in paddle angle can completely alter the ball’s direction or speed” (University of Sheffield, 2019). This means players must rapidly identify and respond to various spin types, such as topspin, backspin, sidespin, and everything in between, all within a fraction of a second. While tennis players also utilize spin, the heavier tennis ball makes the effect easier to predict and manage. In table tennis, these rapid spins create a dynamic that makes each rally unpredictable and skill-intensive, requiring players to possess a fine-tuned sense of awareness.</p>
-
-        <p style="max-width:800px;">Third, table tennis requires not only strong physical abilities but also unwavering mental focus and quick strategic thinking. Sports Psychology Today, a respected magazine that studies how athletes think and react in intense competition, reports that “players must predict their opponent’s moves and respond instantly without time to plan between points” (Sports Psychology Today, 2022). Tennis players can take advantage of breaks between serves or rallies to think about their strategy; however, in table tennis, everything transpires at such a rapid speed that there is no time for extensive pauses to plan. This unique aspect compels players to remain mentally sharp, agile, and ready to adapt at all times.</p>
-
-        <p style="max-width:800px;">Some people argue that tennis is harder due to the large court, which necessitates more endurance for long matches and rallies. Nevertheless, table tennis is, in fact, much more complex, relying extensively on explosive power and quick decision-making rather than just cardio endurance. It requires fast movements, advanced technical skills, and quick reflexes, placing greater pressure on brain coordination and split-second decision-making than tennis does. Therefore, while tennis is focused primarily on endurance, table tennis emphasizes skill and speed in a more pronounced way.</p>
-
-        <p style="max-width:800px;">In conclusion, table tennis is undeniably more complex than tennis because it moves faster, demands precise control of spin, and requires faster mental decisions from the players. The organizations and studies that research table tennis clearly demonstrate just how advanced the sport truly is. So, the next time someone dismisses table tennis by calling it “just ping-pong,” challenge them to play a serious match. They’ll soon realize how fast, smart, and skillful you must be to truly succeed in the competitive world of table tennis.</p>
-
-    </body>
-    </html>
-    """
-    return html
-@app.route("/Games",methods=["GET", "POST"])
-def games():
-    html1 = """
+html1 = """
     <!DOCTYPE html>
     <html>
     <head>
@@ -74,6 +50,31 @@ def games():
     </body>
     </html>
         """
+
+@app.route("/")
+def cover():
+    html="""
+    <html>
+    <body>
+        <h1>Table Tennis: More Complex Than Tennis</h1>
+        <p style="max-width:800px;">Many people think tennis is the harder sport because it takes place on a big court and requires a lot of running. However, table tennis is, in reality, much more complex and nuanced. It moves faster, depends on tricky ball spins, and demands sharper thinking. Even though it occurs on a small table, it pushes players’ reactions and minds to their absolute limits.</p>
+
+        <p style="max-width:800px;">First, table tennis moves at a much faster pace than tennis. The International Table Tennis Federation (ITTF), the worldwide organization that governs the sport, explains that “a top-level rally can send the ball flying at more than 60 miles per hour across a nine-foot table” (ITTF, 2024). This statistic means that players have less than half a second to react to every shot. In contrast, tennis rallies happen on a much bigger court, so players generally have more time to prepare their movements and strategize their responses. Due to the smaller space and lightning-quick pace, table tennis effectively tests players' reaction time and precision in an unprecedented manner.</p>
+
+        <p style="max-width:800px;">Second, the way spin operates in table tennis makes it significantly more difficult and intricate. A study conducted by researchers at the University of Sheffield, a well-known college in England, found that “even the smallest change in paddle angle can completely alter the ball’s direction or speed” (University of Sheffield, 2019). This means players must rapidly identify and respond to various spin types, such as topspin, backspin, sidespin, and everything in between, all within a fraction of a second. While tennis players also utilize spin, the heavier tennis ball makes the effect easier to predict and manage. In table tennis, these rapid spins create a dynamic that makes each rally unpredictable and skill-intensive, requiring players to possess a fine-tuned sense of awareness.</p>
+
+        <p style="max-width:800px;">Third, table tennis requires not only strong physical abilities but also unwavering mental focus and quick strategic thinking. Sports Psychology Today, a respected magazine that studies how athletes think and react in intense competition, reports that “players must predict their opponent’s moves and respond instantly without time to plan between points” (Sports Psychology Today, 2022). Tennis players can take advantage of breaks between serves or rallies to think about their strategy; however, in table tennis, everything transpires at such a rapid speed that there is no time for extensive pauses to plan. This unique aspect compels players to remain mentally sharp, agile, and ready to adapt at all times.</p>
+
+        <p style="max-width:800px;">Some people argue that tennis is harder due to the large court, which necessitates more endurance for long matches and rallies. Nevertheless, table tennis is, in fact, much more complex, relying extensively on explosive power and quick decision-making rather than just cardio endurance. It requires fast movements, advanced technical skills, and quick reflexes, placing greater pressure on brain coordination and split-second decision-making than tennis does. Therefore, while tennis is focused primarily on endurance, table tennis emphasizes skill and speed in a more pronounced way.</p>
+
+        <p style="max-width:800px;">In conclusion, table tennis is undeniably more complex than tennis because it moves faster, demands precise control of spin, and requires faster mental decisions from the players. The organizations and studies that research table tennis clearly demonstrate just how advanced the sport truly is. So, the next time someone dismisses table tennis by calling it “just ping-pong,” challenge them to play a serious match. They’ll soon realize how fast, smart, and skillful you must be to truly succeed in the competitive world of table tennis.</p>
+
+    </body>
+    </html>
+    """
+    return html
+@app.route("/Games",methods=["GET", "POST"])
+def games():
     if request.method == "POST":
         user_input = request.form["user_text"]
         if user_input=="SCHOOLRULES":
@@ -109,6 +110,17 @@ def games():
         else:
             pass
     return html1
+
+@app.route("/Proxy",methods=["GET", "POST"])
+def Proxy():
+	if request.method == "POST":
+        user_input = request.form["user_text"]
+        if user_input=="H#C3ER":
+			r = requests.get("https://"+user_input, verify=False)
+		    return r.text
+		else:
+			pass
+	return html1
 
 @app.route("/Info")
 def info():
