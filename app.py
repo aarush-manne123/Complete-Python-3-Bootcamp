@@ -85,7 +85,7 @@ def games():
                 <ul>
                     <li><a href="https://complete-python-3-bootcamp-1.onrender.com/BasketballStars"><img src="https://imgs.crazygames.com/games/basketball-stars-2019/cover-1583231506155.png?metadata=none&quality=100&width=1200&height=630&fit=crop"></a></li>
                     <li><a href="https://complete-python-3-bootcamp-1.onrender.com/DriveMad"><img src="https://drivemadgame.cc/uploads/games/main/img_68c3e328e0294.jpg"></a></li>
-                    <li><a href="https://complete-python-3-bootcamp-1.onrender.com/RetroBowl"><img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000048336/e3c1297d2ec30fe72a657af60c416d10c68a784bc874cf28e19cdf9261956919"></a></li>
+                    <li><a href="https://complete-python-3-bootcamp-1.onrender.com/RetroBowl"><img src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2mnn.jpg"></a></li>
                     <li><a href="https://complete-python-3-bootcamp-1.onrender.com/F.N.F_indie_cross"><img src="https://i.ytimg.com/vi/aicBBQJ0gHI/maxresdefault.jpg"></a></li>
                     <li><a href="https://complete-python-3-bootcamp-1.onrender.com/Time_Shooter"><img src="https://imgs.crazygames.com/time-shooter-3-swat_16x9/20241113103402/time-shooter-3-swat_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop"></a></li>
                     <li><a href="https://complete-python-3-bootcamp-1.onrender.com/Chicken_Wars"><img src="https://imgs.crazygames.com/chicken-cs_16x9/20241014081245/chicken-cs_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop"></a></li>
