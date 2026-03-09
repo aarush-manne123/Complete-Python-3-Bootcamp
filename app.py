@@ -130,21 +130,14 @@ def Proxy():
 """
 
     if request.method == "POST":
-
         password = request.form.get("user_text")
         url = request.form.get("url")
-
         if password == "H#C3ER" and url:
-
             try:
-
                 if not url.startswith("http"):
                     url = "https://" + url
-
                 r = requests.get(url, verify=False, timeout=10)
-
                 return r.text
-
             except Exception as e:
                 return f"Proxy error: {e}"
 
