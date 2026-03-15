@@ -133,7 +133,7 @@ def Proxy():
         password = request.form.get("user_text")
         url = request.form.get("url")
 
-        if password == "H#C3ER" and url:
+        if password == "HaCkER" and url:
 
             if not url.startswith("http"):
                 url = "https://" + url
