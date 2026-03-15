@@ -133,13 +133,39 @@ def Proxy():
         password = request.form.get("user_text")
         url = request.form.get("url")
         if password == "H#C3ER" and url:
-            try:
-                if not url.startswith("http"):
-                    url = "https://" + url
-                r = requests.get(url, verify=False, timeout=10)
-                return r.text
-            except Exception as e:
-                return f"Proxy error: {e}"
+           if not url.startswith("http"):
+       		   url = "https://" + url
+
+
+		   try:
+		       r = requests.get(
+		           url,
+		           headers={"User-Agent": "Mozilla/5.0"},
+		           timeout=10,
+		           verify=False
+		       )
+		
+		
+		       excluded_headers = [
+		           "content-encoding",
+		           "content-length",
+		           "transfer-encoding",
+		           "connection",
+		       ]
+		
+		
+		       headers = [
+		           (name, value)
+		           for name, value in r.raw.headers.items()
+		           if name.lower() not in excluded_headers
+		       ]
+		
+		
+		       return Response(r.content, r.status_code, headers)
+		
+		
+		   except Exception as e:
+		       return f"Proxy error: {e}"
 
     return html2
 
